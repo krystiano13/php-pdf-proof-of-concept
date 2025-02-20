@@ -11,8 +11,8 @@ class Generator {
             $pdf = new Pdf("./test.pdf");
 
             $pdf
-                ->fillForm($data)
-                ->flatten()
+                ->fillForm($data) // Podajemy tablicę asocjacyjną, w której key i value wyglądają następująco: 'pole_w_pdf' => "wartość"
+                ->flatten() // to usuwa nam możliwość edycji pliku po wygenerowaniu
                 ->saveAs('./files/'.$pdfName);
 
             return $pdfName;

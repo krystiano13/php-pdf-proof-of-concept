@@ -24,7 +24,6 @@ $data = [
     'enquiry_field' => $_POST["description"]
 ];
 
-
 $result = Generator::generate($data);
 
 var_dump($result);
