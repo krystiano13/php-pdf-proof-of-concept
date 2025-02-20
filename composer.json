@@ -1,0 +1,17 @@
+{
+    "name": "krystian/pdf-php",
+    "autoload": {
+        "psr-4": {
+            "Krystian\\PdfPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Krystian Zieja",
+            "email": "60575093+krystiano13@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "mikehaertl/php-pdftk": "^0.13.1"
+    }
+}
